@@ -1,1 +1,10 @@
-"# nextcloud-custom_event_bridge" 
+"# nextcloud-custom_event_bridge"
+ứng dụng bắt sự kiện chat để làm realtime ứng dụng.
+Nextcloud app → publish Redis event -- > websocket
+
+\*cách test monitor:
+Subscribe Redis: trên redis
+redis-cli SUBSCRIBE chat.events
+
+Mở terminal khác:
+redis-cli PUBLISH chat.events '{"event":"test"}'

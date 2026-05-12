@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<info>
+    <id>custom_event_bridge</id>
+    <name>Custom Event Bridge</name>
+
+    <summary>
+        Realtime event bridge for Nextcloud Talk
+		Ứng dụng đồng bộ realtile
+    </summary>
+
+    <description>
+        Publishes Nextcloud Talk chat events to Redis PubSub.
+		Ứng dụng đồng bộ realtile - custom by anhpt2
+    </description>
+
+    <version>1.0.0</version>
+
+    <licence>agpl</licence>
+
+    <author>ACT Company</author>
+
+    <namespace>CustomEventBridge</namespace>
+
+    <category>integration</category>
+
+    <dependencies>
+        <nextcloud min-version="29" max-version="31"/>
+    </dependencies>
+</info>
