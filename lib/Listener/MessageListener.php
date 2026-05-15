@@ -41,7 +41,13 @@ class MessageListener {
                 'message' => $comment->getMessage(),
                 'actor_id' => $actorId,
                 'actor_name' => $displayName,
-                'room_token' => $room->getToken(),             
+                'room_token' => $room->getToken(), 
+                'room_id' => $room->getId(),
+                'room_type' => $room->getType(), 
+                'room_name' => $room->getName(),
+                'room_description' => $room->getDescription(), 
+                //'room_owner_id' => $room->getOwnerId(),
+                // 'room_created_at' => $room->getCreatedAt(),    
                 'time' => time(),
             ];
 

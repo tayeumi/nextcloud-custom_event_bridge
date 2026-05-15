@@ -4,7 +4,13 @@ Nextcloud app → publish Redis event -- > websocket
 
 \*cách test monitor:
 Subscribe Redis: trên redis
-redis-cli SUBSCRIBE chat.events
+
+```bash
+  redis-cli SUBSCRIBE chat.events
+```
 
 Mở terminal khác:
-redis-cli PUBLISH chat.events '{"event":"test"}'
+
+```bash
+  redis-cli PUBLISH chat.events '{"event":"test"}'
+```
